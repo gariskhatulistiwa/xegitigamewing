@@ -17,8 +17,8 @@
             <form class="login-form" id="loginForm" novalidate>
                 <div class="form-group">
                     <div class="input-wrapper">
-                        <input type="email" id="email" name="email" required autocomplete="email">
-                        <label for="email">Email Address</label>
+                        <input type="text" id="usernmae" name="usernmae" required autocomplete="username">
+                        <label for="usernmae">Username</label>
                         <span class="focus-border"></span>
                     </div>
                     <span class="error-message" id="emailError"></span>
@@ -51,6 +51,7 @@
                     <span class="btn-text">Sign In</span>
                     <span class="btn-loader"></span>
                 </button>
+                <div id="alertBox" class="alert" style="display:none;"></div>
             </form>
 
             <div class="divider">
@@ -82,5 +83,7 @@
 
     <script src="../../shared/js/form-utils.js"></script>
     <script src="script.js"></script>
+
+    <script src="js/login.js"></script>
 </body>
 </html>
